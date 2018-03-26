@@ -1,0 +1,32 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<html>
+<style>
+
+
+.hide{
+display:none;
+}
+</style>
+<div id="qqq">
+<p id="para">chudamani </p>
+</div>
+<button id="btn1">hide
+
+</button>
+
+<button id="btn2">
+show
+
+</button>
+<script>
+
+ $(document).ready(function(){
+	$("#btn1").on('click',function(){
+		$('#qqq').addClass('hide');
+	});
+	$("#btn2").on('click',function(){
+		$('#qqq').removeClass('hide');		
+	});
+ });
+</script>
+</html>

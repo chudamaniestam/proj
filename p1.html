@@ -1,0 +1,109 @@
+<html><head>
+<style>
+    #inputbox{
+        width:	100%;
+    }
+	#bodyWrapper {
+    height: 100%;
+    background-color: #d8d6d6;
+    overflow-y: auto;
+}
+    #header{
+        width:30em;
+		height:100px;
+		background-color:blue;
+    }
+    #footer{
+             width: 30em;
+    /* margin-top: 37em; */
+    background-color: blue;
+    bottom: 0;
+    height: 100px;
+    position: absolute;
+    }
+#chuda{   
+    left: 50%;
+    width:30em;
+    height:100%;
+    margin-top: 1em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    position:fixed;
+}
+.userMsg{
+	width: 80%;
+    background-color: red;
+    color: white;
+    float: right;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+	
+}
+.botMsg{
+	width: 80%;
+    background-color: green;
+    color: white;
+    float: left;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+	
+}
+#bodyWrapper{
+height:70%;
+	background-color:gray;
+}
+#mani{
+    background-color: pink;
+    width: 150px;
+    border: 10px;
+    padding: 25px;
+    margin: 100px;
+}
+</style>
+</head>
+<body>
+<body>
+<div id="main"></div>
+</body>
+
+
+
+<div id="chuda">
+	<div id="header">gjdudytdydyd</div>
+    <div id="bodyWrapper">
+	
+	
+	</div>
+    <div id="footer">
+	<span style="float:left;display:block;width:80%;margin-top:15px">
+    <textarea id="inputbox" placeholder="Write message here"></textarea></span>
+	<span style="margin-top:15px;float:right;display:block;width: 20%;text-align: center;color: yellow;font-size: x-large;font-weight: 500;">
+	<button onclick="display()">send</button>
+	</span>
+	<script>
+	function display(){
+	
+			var div = document.createElement("div");
+			div.className = 'userMsg';
+			div.innerHTML = document.getElementById("inputbox").value;
+			document.getElementById("bodyWrapper").appendChild(div);
+			sendResponse();
+	}
+	function sendResponse(){
+			var div = document.createElement("div");
+			div.className = 'botMsg';
+			div.innerHTML = "Hi, How may i help you tell me";
+			document.getElementById("bodyWrapper").appendChild(div);
+	}
+	</script>
+</div>
+    
+</div>
+
+
+
+
+</body></html>

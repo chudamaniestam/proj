@@ -1,0 +1,76 @@
+<html>
+<body>
+<style>
+.colsa{
+    border: 2px solid green;
+    padding: 0px;
+	width: 60px;
+	height: 60px;
+	
+	}
+#pics1{
+width: 30%;
+height: 70%;
+margin: 2px;
+border: 2px solid red;
+}
+img{
+width:50px;
+height:50px;
+}
+</style>
+
+<div id="pics1">
+
+<table id="p1" style="width:10%">
+<tr>
+
+<td class="colsa">
+<a href="D:\files\stills\myphoto.jpg" ><img src="D:\files\stills\myphoto.jpg" onMouseOut="hideimage()"  onMouseOver="showImg('myphoto.jpg')"></img></a>
+</td>
+<td class="colsa">
+<img src="D:\files\stills\os.jpg" style="width:128px;height:128px;"></img>
+</td>
+<td class="colsa">
+<img src="D:\files\stills\os.jpg" style="width:128px;height:128px;"></img>
+</td>
+
+</tr>
+<tr>
+<td>
+<img src="D:\files\stills\myphoto.jpg" style="width:128px;height:128px;"></img>
+</td>
+<td>
+<img src="D:\files\stills\os.jpg" style="width:128px;height:128px;"></img>
+</td>
+<td>
+<img src="D:\files\stills\os.jpg" style="width:128px;height:128px;"></img>
+</td>
+</tr>
+<tr>
+<td>
+<img src="D:\files\stills\myphoto.jpg" style="width:128px;height:128px;"></img>
+</td>
+<td>
+<img src="D:\files\stills\os.jpg" style="width:128px;height:128px;"></img>
+</td>
+<td>
+<img src="D:\files\stills\os.jpg" style="width:128px;height:128px;"></img>
+</td>
+</tr>
+</table>
+
+</div>
+<div id="next"></div>
+<script>
+function showImg(G){
+document.getElementById('next').innerHTML='<img src="D:\\files\\stills\\'+G+'" ></img>';
+}
+function hideimage(){
+document.getElementById('next').innerHTML='';
+}
+</script>
+
+</body>
+
+</html>
